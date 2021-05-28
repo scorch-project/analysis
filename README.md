@@ -45,18 +45,7 @@ https://github.com/CTSRD-CHERI/cheribuild.git
 cd cheribuild
 ./cheribuild.py --run/ssh-forwarding-port 5555 run-riscv64-purecap -d
 ```
-The first time you run this command it will take over two hours as `cheribuild.py` will need to build the VM and the dependencies in your home folder (`$HOME/cheri`). This command will also start a virtual machine in the current terminal window so you will need to open a new terminal and navigate to the `scorch-analysis` folder. Execute the following commands inside the VM.
-```
-vi /etc/ssh/sshd_config
-```
-Find and uncomment the following line:
-```
-PermitEmptyPasswords no
-```
-After saving your changes restart the VM:
-```
-reboot
-```
+The first time you run this command it will take over two hours as `cheribuild.py` will need to build the VM and the dependencies in your home folder (`$HOME/cheri`). This command will also start a virtual machine in the current terminal window so you will need to open a new terminal and navigate to the `scorch-analysis` folder.
 
 
 ## How to run
