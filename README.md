@@ -78,11 +78,11 @@ cd analysis
 
 To run our script on 178 benchmarks not requiring any inputs use the following command:
 ```
-src/run_hybrid.py --CFLAGS-soft=extra-defs.c --CFLAGS-def=extra-defs.c --CFLAGS-purecap=extra-defs.c --esbmc-opts="--incremental-bmc --unlimited-k-steps --memory-leak-check --no-div-by-zero-check --force-malloc-success --state-hashing --no-align-check --quiet" --sv-comp-root=$SCORCH_DIR/sv-benchmarks benchmarks/sv-comp-without-nondet.txt --timeout=60
+src/run_hybrid.py --CFLAGS-soft=src/extra-defs.c --CFLAGS-def=src/extra-defs.c --CFLAGS-purecap=src/extra-defs.c --esbmc-opts="--incremental-bmc --unlimited-k-steps --memory-leak-check --no-div-by-zero-check --force-malloc-success --state-hashing --no-align-check --quiet" --sv-comp-root=$SCORCH_DIR/sv-benchmarks benchmarks/sv-comp-without-nondet.txt --timeout=60
 ```
 
 Similarly, to run our script on 127 unsafe benchmarks requiring inputs use the following command:
 ```
-src/run_hybrid.py --CFLAGS-soft=extra-defs.c --CFLAGS-def=extra-defs.c --CFLAGS-purecap=extra-defs.c --esbmc-opts="--incremental-bmc --unlimited-k-steps --memory-leak-check --no-div-by-zero-check --force-malloc-success --state-hashing --no-align-check --quiet" --sv-comp-root=$SCORCH_DIR/sv-benchmarks benchmarks/sv-comp-nondet-unsafe.txt --timeout=60
+src/run_hybrid.py --CFLAGS-soft=src/extra-defs.c --CFLAGS-def=src/extra-defs.c --CFLAGS-purecap=src/extra-defs.c --esbmc-opts="--incremental-bmc --unlimited-k-steps --memory-leak-check --no-div-by-zero-check --force-malloc-success --state-hashing --no-align-check --quiet" --sv-comp-root=$SCORCH_DIR/sv-benchmarks benchmarks/sv-comp-nondet-unsafe.txt --timeout=60
 ```
 
