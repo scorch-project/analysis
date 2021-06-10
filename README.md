@@ -41,7 +41,7 @@ cd ../..
 ```
 ### PureCap
 ```
-https://github.com/CTSRD-CHERI/cheribuild.git
+git clone https://github.com/CTSRD-CHERI/cheribuild.git
 cd cheribuild
 ./cheribuild.py --run/ssh-forwarding-port 5555 run-riscv64-purecap -d
 ```
